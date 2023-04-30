@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head><title>Payment</title>
+<style>
+body {
+ margin: 0;
+}
+ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ width: 25%;
+ background-color: #f1f1f1;
+ position: fixed;
+ height: 100%;
+ overflow: auto;
+}
+li a {
+ display: block;
+ color: black;
+ padding: 8px 16px;
+ text-decoration: none;
+}
+li a.active {
+ background-color: grey;
+ color: white;
+}
+li a:hover:not(.active) {
+ background-color: grey;
+ color: black;
+}
+body
+{
+ font-family: Arial;
+ font-size: 17px;
+ padding: 8px;
+}
+*{
+ box-sizing: border-box;
+overflow: hidden;
+}
+.row
+{
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-wrap: wrap;
+ flex-wrap: wrap;
+ margin: 0 -16px;
+}
+.col-25
+{
+ -ms-flex: 25%;
+ flex: 25%;
+}
+.col-50
+{
+ -ms-flex: 50%;
+ flex: 50%;
+}
+.col-75
+{
+ -ms-flex: 75%;
+ flex: 75%;
+}
+.col-25,
+.col-50,
+.col-75 {
+ padding: 0 16px;
+}
+.container
+{
+ background-color: #f2f2f2;
+ padding: 5px 20px 15px 20px;
+ border: 1px solid lightgrey;
+ border-radius: 3px;
+}
+input[type=number]
+{
+ width: 100%;
+ margin-bottom: 20px;
+ padding: 12px;
+ border: 1px solid #ccc;
+border-radius: 3px;
+}
+input[type=text]
+{
+ width: 100%;
+ margin-bottom: 20px;
+ padding: 12px;
+ border: 1px solid #ccc;
+ border-radius: 3px;
+}
+label {
+ margin-bottom: 10px;
+ display: block;
+}
+.icon-container
+{
+ margin-bottom: 20px;
+ padding: 7px 0;
+ font-size: 24px;
+}
+.btn
+{
+ background-color: grey;
+ color: white;
+ padding: 12px;
+ margin: 10px 0;
+ border: none;
+ width: 100%;
+ border-radius: 3px;
+ cursor: pointer;
+ font-size: 17px;
+}
+.btn:hover
+{
+ background-color: grey;
+}
+a
+{
+ color: white;
+ text-decoration: none;
+}
+hr
+{
+ border: 1px solid grey;
+}
+span.price
+{
+ float: right;
+ color: grey;
+}
+.col-25
+{
+ margin-bottom: 20px;
+ }
+</style>
+</head>
+<body>
+<ul>
+ <li><a><b>Payment Options</b></a></li><hr>
+ <li><a class="active" href="card.html"><b>Debit/Credit
+Card</b></a></li>
+</ul>
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+<form name="myForm">
+<div class="row">
+ <div class="col-75">
+ <div class="container">
+ <form action="invoice.html">
+ <div class="row">
+ </div>
+ <div class="col-50">
+ <h3>Payment</h3>
+ <hr>
+ <label for="cname">Name on Card</label>
+ <input type="text" id="cname" name="cardname"
+placeholder="Name On Card" >
+ <label for="ccnum">Credit card number</label>
+ <input type="number" id="ccnum" name="cardnumber"
+placeholder="XXXX-XXXX-XXXX-XXXX">
+ <label for="expmonth">Exp Month</label>
+ <input type="text" id="expmonth" name="expmonth"
+placeholder="Month">
+ <div class="row">
+ <div class="col-50">
+ <label for="expyear">Expiry Year</label>
+ <input type="number" id="expyear" name="expyear"
+placeholder="Year">
+ </div>
+ <div class="col-50">
+ <label for="cvv">CVV</label>
+ <input type="number" id="cvv" name="cvv"
+placeholder="XXX">
+ </div>
+ </div>
+ </div>
+ <input type="checkbox" name=rad selected>I have read the
+<a>Terms And Conditions</a> and agree to the Privacy Policy</input>
+ </div>
+ <button value="Make Payment" class="btn"><a href="text.html">MAKE A PAYMENT</a></button>
+ </form>
+ </div>
+ </div>
+ </div>
+</div>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html>
+    <head>
+    <style>
+        body{
+            background-color: darkslategray;
+        }
+        #box{
+            background-color: white;
+            width:500px;
+            margin-top: 100px;
+            margin-left: 500px;
+        }
+        a{
+    /*padding: 15px;
+    font-size: 30px;*/
+    text-decoration: none;
+    color: red;
+    /*margin-left: 500px;*/
+  }
+    </style>
+<title>Registration</title>
+<script src="val.js"></script> </head>
+<body >
+    <div id="box">
+<h1 align="center">Event Registration Form</h1>
+<p align=center>Fill the form correctly.</p>
+<form id="registration">
+<table border=0 align=center>
+<tr>
+<td><label for="userid">User id:</label>
+<td><input type="text" id="userid" size="30">
+</tr>
+<tr>
+<td><label for="passid">Password:</label>
+<td><input type="password" id="passid" size="30">
+</tr>
+<tr>
+<td><label for="Course">Course:</label>
+<td><input type="text" id="Course" size="30">
+</tr>
+<tr>
+<td><label for="country">Club:</label>
+<td><select id="country">
+<option selected="" value="Default">(Please select a club)</option>
+<option value="avh">AVH</option>
+<option value="mgv">MGV</option>
+<option value="mac">MAC</option>
+<option value="tla">TLA</option>
+<option value="ela">ELA</option>
+</select></td>
+</tr>
+<tr>
+<td><label for="zip">ZIP Code:</label>
+<td><input type="text" id="zip" size="30">
+</tr>
+<tr>
+<td><label for="email">Email:</label>
+<td><input type="text" id="email" size="30">
+</tr>
+<tr>
+<td><label id="type">Type of register:</label>
+<td><input type="checkbox" name="register" value="Regular"><span>Regular</span><br>
+<input type="checkbox" name="register" value="Master"><span>Master</span>
+</td>
+</tr>
+<tr>
+    <td><a id="pay" href="pay.html">make payment</a></td>
+</tr>
+<tr>
+<td colspan=2 align=center><button id="submit" onclick="formValidation()">Submit</button>
+</tr>
+</table>
+</form>
+</div>
+<a href="gallery.html">Go back?</a>
+</body>
+</html>

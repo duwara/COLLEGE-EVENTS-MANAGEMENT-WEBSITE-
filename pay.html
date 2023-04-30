@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head><title>Payment Options</title>
+<style>
+body {
+ margin: 0;
+ color:#576574;
+}
+ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ width: 25%;
+ background-color: #f1f1f1;
+ position: fixed;
+ height: 100%;
+ overflow: auto;
+}
+li a {
+ display: block;
+ color: black;
+ padding: 8px 16px;
+ text-decoration: none;
+}
+li a.active {
+ background-color: #576574;
+ color: white;
+}
+li a:hover:not(.active) {
+ background-color: #576574;
+ color: black;
+}
+body
+{
+ font-family: Arial;
+ font-size: 17px;
+ padding: 8px;
+}
+*{
+ box-sizing: border-box;
+overflow: hidden;
+}
+.row
+{
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-wrap: wrap;
+ flex-wrap: wrap;
+ margin: 0 -16px;
+}
+.col-25
+{
+ -ms-flex: 25%;
+ flex: 25%;
+}
+.col-50
+{
+ -ms-flex: 50%;
+ flex: 50%;
+}
+.col-75
+{
+ -ms-flex: 75%;
+ flex: 75%;
+}
+.col-25,
+.col-50,
+.col-75 {
+ padding: 0 16px;
+}
+.container
+{
+ background-color: #f2f2f2;
+ padding: 5px 20px 15px 20px;
+ border: 1px solid lightgrey;
+ border-radius: 3px;
+}
+input[type=number]
+{
+ width: 100%;
+ margin-bottom: 20px;
+ padding: 12px;
+ border: 1px solid #ccc;
+ border-radius: 3px;
+}
+input[type=text]
+{
+ width: 100%;
+ margin-bottom: 20px;
+ padding: 12px;
+ border: 1px solid #ccc;
+ border-radius: 3px;
+}
+label {
+ margin-bottom: 10px;
+ display: block;
+}
+.icon-container
+{
+ margin-bottom: 20px;
+ padding: 7px 0;
+ font-size: 24px;
+}
+.btn
+{
+ background-color: #576574;
+ color: white;
+ padding: 12px;
+ margin: 10px 0;
+ border: none;
+ width: 100%;
+ border-radius: 3px;
+ cursor: pointer;
+ font-size: 17px;
+}
+.btn:hover
+{
+ background-color: #576574;
+}
+a
+{
+ color: #576574;
+}
+hr
+{
+ border: 1px solid lightgrey;
+}
+span.price
+{
+ float: right;
+ color: grey;
+}
+.col-25
+{
+ margin-bottom: 20px;
+ }
+</style>
+</head>
+<body>
+<ul>
+ <li><a class="active"><b>Payment
+Options</b></a></li><hr>
+ <li><a href="card.html">Debit/Credit Card</a></li>
+</ul>
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+ <h1>Select The Payment Option<h1>
+</div>
+</body>
+</html>
